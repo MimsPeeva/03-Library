@@ -25,8 +25,8 @@ jobs:
     - name: Install node modules
       run: npm install
     - name: Start the FrontEnd
-      run: npm run start-fe
+      run: npm run start-fe &
     - name: Start the BackEnd
-      run: npm run start-be
+      run: npm run start-be &
     - name: Run Playwright UI tests
       run: npm run test
